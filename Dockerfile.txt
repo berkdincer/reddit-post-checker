@@ -1,0 +1,5 @@
+FROM python:3.11
+COPY . /brandefense
+WORKDIR /brandefense
+RUN pip install --no-cache-dir -r requirements.txt
+CMD ["python", "brandefense.py"]
